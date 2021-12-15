@@ -13,11 +13,44 @@
 
     <body>
         <div class="container">
+        <div class="jumbotron text-center">
             <h1>Mission to Mars</h1>
+            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button"></a></p>
 
         </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Mars News</h2>
+                    <h3>{{dataset.newstitle}}</h3>
+                    <p>{{dataset.newspara}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Featured Mars Image</h2>
+                <img src="{{database.featured_image_url}}", class="img-fluid"/>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="row">
+                <h3>Mars Facts</h3>
+                {{dataset.mars_facts}}
+            </div>
+        </div>
+
         
+        
+
+
     </body>
+
+
 
 
 
